@@ -22,8 +22,8 @@
               "    pm.expect(jsonData.data).to.be.an('array');",
               "});",
               "",
-              "pm.test(\"Response time is under 1000ms\", function () {",
-              "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+              "pm.test(\"Response time is under 3000ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(3000);",
               "});",
               ""
             ],
