@@ -56,5 +56,5 @@ GET, POST, PUT, DELETE requests against the /users and /register endpoints, cove
 
 ## Summary
 - Total test cases: 9
-- Passed: [fill in after running]
-- Failed: [fill in after running]
+- Passed: 8
+- Failed: 1
