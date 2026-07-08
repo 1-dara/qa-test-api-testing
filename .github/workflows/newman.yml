@@ -28,6 +28,15 @@ jobs:
         run: npm install -g newman-reporter-htmlextra
 
       - name: Run API tests
+<<<<<<< HEAD
+=======
+        run: newman run reqres-collection.json --env-var "apiKey=${{ secrets.REQRES_API_KEY }}"
+
+      - name: Install Newman HTML reporter
+        run: npm install -g newman-reporter-htmlextra
+
+      - name: Run API tests
+>>>>>>> b0fcdc5ed8b60d9b073c0b6fe4446bc9ced1983c
         run: newman run reqres-collection.json --env-var "apiKey=${{ secrets.REQRES_API_KEY }}" -r cli,htmlextra --reporter-htmlextra-export newman-report.html
 
       - name: Upload test report
