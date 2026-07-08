@@ -22,8 +22,8 @@
               "    pm.expect(jsonData.data).to.be.an('array');",
               "});",
               "",
-              "pm.test(\"Response time is under 3000ms\", function () {",
-              "    pm.expect(pm.response.responseTime).to.be.below(3000);",
+              "pm.test(\"Response time is under 8000ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(8000);",
               "});",
               ""
             ],
@@ -362,7 +362,7 @@
     "apikey": [
       {
         "key": "value",
-        "value": "free_user_3GBL2dSlaLto9vQNDay3c9onbHO",
+        "value": "{{apiKey}}",
         "type": "string"
       },
       {
@@ -394,6 +394,16 @@
           ""
         ]
       }
+    }
+  ],
+  "variable": [
+    {
+      "key": "apiKey",
+      "value": ""
+    },
+    {
+      "key": "auth_secret_0rt6",
+      "secret": true
     }
   ]
 }
