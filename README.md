@@ -1,4 +1,4 @@
-![API Tests](https://github.com/1-dara/qa-portfolio-api-testing/actions/workflows/newman.yml/badge.svg)
+![API Tests](https://github.com/1-dara/qa-test-api-testing/actions/workflows/newman.yml/badge.svg)
 
 # QA Portfolio: ReqRes API Testing
 
