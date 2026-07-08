@@ -1,3 +1,6 @@
+![API Tests](https://github.com/1-dara/qa-test-api-testing/actions/workflows/newman.yml/badge.svg)
+
+
 # QA Portfolio: ReqRes API Testing
 
 API testing project targeting [ReqRes](https://reqres.in), a mock REST API built for testing practice.
