@@ -24,3 +24,17 @@ jobs:
 
       - name: Run API tests
         run: newman run reqres-collection.json --env-var "apiKey=${{ secrets.REQRES_API_KEY }}"
+
+      - name: Install Newman HTML reporter
+        run: npm install -g newman-reporter-htmlextra
+
+      - name: Run API tests
+        run: newman run reqres-collection.json --env-var "apiKey=${{ secrets.REQRES_API_KEY }}" -r cli,htmlextra --reporter-htmlextra-export newman-report.html
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: newman-report
+          path: newman-report.html
+          retention-days: 30
